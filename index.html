@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stephen Hawking Project ooouh so cool</title>
+<style>
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--ink:#f2ece4;--dim:#b9aea0;--glow:#ffb066;--panel:rgba(8,6,12,.62)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:#020207;color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.7;overflow-x:hidden}
+#bh{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;filter:blur(0px) brightness(1);transform:scale(1.015);transition:filter .65s ease}
+body.reading #bh{filter:blur(7px) brightness(.48) saturate(.8)}
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(2,2,7,.05),rgba(2,2,7,.38) 55%,rgba(2,2,7,.78));opacity:.75;transition:opacity .6s}
+body.reading::after{opacity:1}
+.wrap{position:relative;z-index:1;max-width:820px;margin:0 auto;padding:0 22px}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;padding:10vh 0 0}
+h1{font-size:clamp(2.25rem,7vw,4.7rem);line-height:1.04;margin:18px 0 0;letter-spacing:-.035em;text-wrap:balance;text-shadow:0 0 34px rgba(255,150,60,.5),0 8px 35px #000}
+.sub{color:var(--glow);letter-spacing:.28em;text-transform:uppercase;font-size:.7rem;margin-top:14px;font-family:system-ui,sans-serif}
+.hero-note{max-width:520px;color:#d5c8b9;font:1rem/1.7 system-ui,sans-serif;margin:22px auto 0;text-shadow:0 2px 12px #000}
+.cue{margin-top:auto;padding:0 0 42px;color:var(--dim);font-family:system-ui,sans-serif;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+.cue::after{content:"";display:block;width:1px;height:34px;margin:12px auto 0;background:linear-gradient(var(--glow),transparent)}
+.fx{will-change:opacity,transform}
+details{background:linear-gradient(135deg,rgba(18,14,19,.86),rgba(7,8,15,.78));backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,176,102,.22);border-radius:5px;margin:0 0 24px;padding:5px 25px;box-shadow:0 16px 55px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.045);transition:border-color .25s,transform .25s,background .25s}
+details:hover{border-color:rgba(255,176,102,.48);background:linear-gradient(135deg,rgba(27,19,22,.92),rgba(8,10,18,.86))}
+summary{cursor:pointer;font-size:clamp(1.05rem,2.5vw,1.25rem);font-weight:600;padding:19px 0;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;letter-spacing:.005em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:0 0 30px;width:30px;height:30px;display:grid;place-items:center;border:1px solid rgba(255,176,102,.3);border-radius:3px;color:var(--glow);font:1.35rem/1 system-ui,sans-serif;transition:transform .3s,background .3s}
+details[open] summary::after{transform:rotate(45deg);background:rgba(255,176,102,.1)}
+details p{margin:0 0 22px;color:#e3d9d0;font:1rem/1.85 system-ui,sans-serif;max-width:70ch}
+.end{text-align:center;color:var(--dim);font: .85rem/1.7 system-ui,sans-serif;padding:38px 0 120px}
+@media(max-width:600px){.wrap{padding:0 16px}.hero{padding-top:13vh}details{padding:4px 18px;margin-bottom:18px}details p{font-size:.94rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Always-visible custom page scrollbar */
+html{scrollbar-width:none!important}
+html::-webkit-scrollbar{display:none!important;width:0!important}
+#custom-scrollbar{position:fixed;z-index:20;top:16px;right:6px;bottom:16px;width:8px;display:flex;justify-content:center;opacity:.92;pointer-events:auto;user-select:none;touch-action:none;border-radius:999px;overflow:visible}
+#custom-scrollbar .scroll-track{position:absolute;inset:0 2px;border:1px solid rgba(255,176,102,.2);border-radius:999px;background:linear-gradient(180deg,rgba(13,10,16,.78),rgba(35,19,18,.72));box-shadow:inset 0 0 10px rgba(0,0,0,.65);overflow:hidden}
+#custom-scrollbar .scroll-thumb{position:absolute;left:0;right:0;top:0;height:27px;min-height:22px;border:1px solid rgba(255,225,190,.85);border-radius:999px;background:linear-gradient(180deg,#ffe5c5 0%,#ffad63 42%,#a94c28 100%);box-shadow:0 0 9px rgba(255,150,70,.55),inset 0 0 5px rgba(255,255,255,.3);cursor:grab;transition:filter .18s,box-shadow .18s;overflow:hidden}
+#custom-scrollbar .scroll-thumb:hover{
+  filter:brightness(1.18);
+  box-shadow:0 0 15px rgba(255,150,70,.8),inset 0 0 6px rgba(255,255,255,.4);
+}
+#custom-scrollbar .scroll-thumb:active{cursor:grabbing;filter:brightness(1.25)}
+@media(max-width:600px){
+  #custom-scrollbar{right:2px;width:15px;top:8px;bottom:8px}
+  #custom-scrollbar .scroll-track{inset:0 5px}
+}
+</style>
+</head>
+<body>
+<canvas id="bh"></canvas>
+<div id="custom-scrollbar" aria-label="Page scrollbar"><div class="scroll-track"></div><div class="scroll-thumb"></div></div>
+<div class="wrap">
+  <section class="hero">
+    <div class="fx">
+      <h1>Stephen Hawking Project<br>ooouh so cool</h1>
+    </div>
+  </section>
+
+  <details class="fx" open>
+    <summary>What is a black hole?</summary>
+    <p>A black hole is a region of space where gravity is so strong that nothing, not even light, can escape from it. Black holes form when a huge amount of matter is squeezed into an incredibly small space, meaning stars going into supernova can become one. The boundary around it is called the event horizon, which is considered the point of no return. Anything that crosses it is pulled inward toward the center, called the singularity, where our current physics breaks down. Stephen Hawking showed that black holes are not perfectly black, because they slowly "leak" a faint glow now known as Hawking (wow almost like Stephen HAWKING) radiation.</p>
+  </details>
+
+  <details class="fx">
+    <summary>What are the two types of black holes?</summary>
+    <p>The two main types are stellar mass black holes and supermassive black holes. Stellar mass black holes form when a very massive star runs out of fuel, collapses, and explodes as a supernova. They usually hold between about five and a few dozen times the mass of our Sun. Supermassive black holes sit at the centers of galaxies and contain millions or even billions of Suns’ worth of mass. Astronomers also suspect rarer middle sized ones exist, but those two categories are the ones most people learn first.</p>
+  </details>
+
+  <details class="fx">
+    <summary>What is an astrophysicist?</summary>
+    <p>An astrophysicist is a scientist who uses the laws of physics to understand stars, planets, galaxies, and the universe as a whole. They study how objects form, how they change over time, and what they are made of. To do this they use telescopes, space probes, particle detectors, and powerful computer simulations. Some astrophysicists collect observations while others, called theorists, work mostly with mathematics. Stephen Hawking was a theoretical physicist and cosmologist who worked in exactly this territory, especially on black holes and the origin of the universe.</p>
+  </details>
+
+  <details class="fx">
+    <summary>What is the Big Bang theory?</summary>
+    <p>The Big Bang theory says the universe began nearly 14 billion years ago from an extremely hot, dense state and has been expanding ever since. It was not an explosion into empty space, but an expansion of space itself. Early on, the universe cooled enough for the first atoms, which were mostly hydrogen and helium, to form. The theory is supported by the observed expansion of galaxies and by the cosmic microwave (yes microwave) background, a faint afterglow of light found in 1965. Stephen Hawking and others explored what could have happened at the very beginning, when gravity and quantum physics both mattered.</p>
+  </details>
+
+  <details class="fx">
+    <summary>Bonus thingamajig: what is TON 618?</summary>
+    <p>TON 618 is an ultramassive black hole that is about ten billion light years away from Earth. Estimates of its mass range from roughly 40 to 66 billion times the mass of the Sun. Its event horizon is tens of times wider than the orbit of Neptune, which is large enough to swallow our whole solar system. The glowing disk of gas spiraling into it makes the quasar shine with the light of well over a hundred trillion Suns. Oh and TON 618 has 66 billion solar masses and is most likely not the largest black hole in space, as there are others like Phoenix A which has an estimated amount of 100 billion solar masses which is most definitely bigger than TON 618, but as for now it is considered the largest due to Phoenix A having an estimated amount of mass (or whatever you say that makes that make sense).</p>
+  </details>
+
+</div>
+
+<script>
+var cv=document.getElementById("bh"),g=cv.getContext("2d",{alpha:false}),W,H,cx,cy,R,TE,dpr,stars=[],disk=[],spr=[],TILT=0.1,T=0,NB=20,particleCount=0,lastFrame=0,FRAME_INTERVAL=1000/30;
+function rnd(a,b){return a+Math.random()*(b-a)}
+function mk(){
+  spr=[];
+  for(var b=0;b<NB;b++){
+    var h=b/(NB-1),c=document.createElement("canvas");c.width=c.height=24;
+    var x=c.getContext("2d"),gr=x.createRadialGradient(12,12,0,12,12,12),hue=16+h*30;
+    gr.addColorStop(0,"hsla("+(hue+10)+",100%,"+(75+h*22)+"%,1)");
+    gr.addColorStop(.25,"hsla("+hue+",100%,"+(55+h*30)+"%,.65)");
+    gr.addColorStop(1,"hsla("+(hue-8)+",100%,40%,0)");
+    x.fillStyle=gr;x.fillRect(0,0,32,32);spr.push(c);
+  }
+}
+function init(){
+  dpr=Math.min(window.devicePixelRatio||1,1.25);
+  W=cv.width=Math.round(innerWidth*dpr);H=cv.height=Math.round(innerHeight*dpr);
+  cx=W*0.5;cy=H*0.58;R=Math.min(W*0.37,H*0.255);TE=R*1.3;
+  var diag=Math.sqrt(W*W+H*H);
+  stars=[];for(var i=0;i<560;i++){stars.push({r:rnd(.15,1)*diag*.75,a:rnd(0,6.283),s:rnd(.5,1.5)*dpr,t:rnd(0,6.28),c:Math.random()<.25?"255,215,180":"215,228,255"})}
+  particleCount=Math.max(650,Math.min(1350,Math.round(innerWidth*innerHeight/1100)));
+  disk=[];for(var j=0;j<particleCount;j++){var u=Math.pow(Math.random(),1.5);disk.push({r:R*(1.5+u*3.8),a:rnd(0,6.283),z:rnd(-1,1),s:rnd(.8,2.2)*dpr,o:rnd(.35,1)})}
+}
+function dot(x,y,r,al,sz){
+  var h=1-(r/R-1.5)/3.8;h=h<0?0:h>1?1:h;
+  g.globalAlpha=al>1?1:al;
+  var size=sz*2;
+  g.drawImage(spr[Math.round(h*(NB-1))],x-size*.5,y-size*.5,size,size);
+}
+function frame(now){
+  if(now-lastFrame<FRAME_INTERVAL){if(!document.hidden)requestAnimationFrame(frame);return;}
+  lastFrame=now;
+  T++;
+  g.globalCompositeOperation="source-over";g.globalAlpha=1;
+  g.save();g.beginPath();g.rect(0,0,W,H);g.arc(cx,cy,R*1.01,0,6.283,true);g.clip("evenodd");
+  g.fillStyle="rgba(9,11,21,.4)";g.fillRect(0,0,W,H);
+  g.globalCompositeOperation="lighter";
+  var i,p,x,y,d,s,k1,k2;
+  for(i=0;i<stars.length;i++){
+    p=stars[i];
+    p.a+=0.00022*(1.6-p.r/(W+H)*1.5);
+    x=p.r*Math.cos(p.a);y=p.r*Math.sin(p.a);
+    d=Math.sqrt(x*x+y*y)+.001;s=Math.sqrt(d*d+4*TE*TE);
+    k1=(d+s)/2/d;k2=-(s-d)/2/d;
+    g.fillStyle="rgba("+p.c+","+(.55+.45*Math.sin(T*.03+p.t))*.85+")";
+    var ax=cx+x*k1,ay=cy+y*k1,bx=cx+x*k2,by=cy+y*k2;
+    var adx=ax-cx,ady=ay-cy,bdx=bx-cx,bdy=by-cy,r2=R*R;
+    if(adx*adx+ady*ady>r2)g.fillRect(ax,ay,p.s,p.s);
+    if(bdx*bdx+bdy*bdy>r2)g.fillRect(bx,by,p.s*.8,p.s*.8);
+  }
+  var gl=g.createRadialGradient(cx,cy,R,cx,cy,R*6);
+  gl.addColorStop(0,"rgba(255,150,70,.07)");gl.addColorStop(.35,"rgba(200,90,35,.025)");gl.addColorStop(1,"rgba(0,0,0,0)");
+  g.fillStyle=gl;g.fillRect(0,0,W,H);
+  for(i=0;i<disk.length;i++){
+    p=disk[i];
+    p.a+=0.0055*Math.pow(R*1.5/p.r,1.5)*2.6;
+    var ca=Math.cos(p.a),sa=Math.sin(p.a);
+    var dop=.35+.65*(1-ca)/2,al=p.o*dop*.45;
+    if(sa<0){
+      x=p.r*ca;y=p.r*sa*TILT+p.z*R*.02;
+      d=Math.sqrt(x*x+y*y)+.001;s=Math.sqrt(d*d+4*TE*TE);
+      k1=(d+s)/2/d;k2=-(s-d)/2/d;
+      dot(cx+x*k1,cy+y*k1,p.r,al,p.s);
+      dot(cx+x*k2,cy+y*k2,p.r,al*.6,p.s);
+    }
+  }
+  g.globalAlpha=1;g.globalCompositeOperation="source-over";
+  g.restore();g.globalAlpha=1;g.globalCompositeOperation="source-over";g.fillStyle="#000";g.beginPath();g.arc(cx,cy,R*1.01,0,6.283);g.fill();
+  g.globalCompositeOperation="lighter";
+  var rg=g.createRadialGradient(cx,cy,R*1.01,cx,cy,R*1.14);
+  rg.addColorStop(0,"rgba(255,235,205,.8)");rg.addColorStop(.3,"rgba(255,150,60,.35)");rg.addColorStop(1,"rgba(255,100,30,0)");
+  g.fillStyle=rg;g.beginPath();g.arc(cx,cy,R*1.14,0,6.283);g.fill();g.globalCompositeOperation="source-over";g.fillStyle="#000";g.beginPath();g.arc(cx,cy,R*1.01,0,6.283);g.fill();g.globalCompositeOperation="lighter";
+  for(i=0;i<disk.length;i++){
+    p=disk[i];if(Math.sin(p.a)<0)continue;
+    var c2=Math.cos(p.a),s2=Math.sin(p.a);
+    var fx2=cx+p.r*c2,fy2=cy+p.r*s2*TILT+p.z*R*.02,fa=p.o*(.35+.65*(1-c2)/2)*.6;
+    var qx=fx2-cx,qy=fy2-cy;if(qx*qx+qy*qy<(R*1.04)*(R*1.04))continue;
+    dot(fx2,fy2,p.r,fa,p.s*1.1);
+  }
+  g.globalAlpha=1;
+  if(!document.hidden)requestAnimationFrame(frame);
+}
+mk();init();addEventListener("resize",init);frame();
+
+var scrollQueued=false;
+function updateReadingState(){
+  scrollQueued=false;
+  document.body.classList.toggle("reading",window.scrollY>innerHeight*.35);
+}
+addEventListener("scroll",function(){
+  if(!scrollQueued){scrollQueued=true;requestAnimationFrame(updateReadingState);}
+},{passive:true});
+updateReadingState();
+
+var running=true;
+document.addEventListener("visibilitychange",function(){
+  if(document.hidden){running=false;}
+  else if(!running){running=true;frame();}
+});
+
+var fx=document.querySelectorAll(".fx"),tick=false;
+function clamp(v){return Math.max(0,Math.min(1,v))}
+function update(){
+  tick=false;var vh=innerHeight;
+  for(var i=0;i<fx.length;i++){
+    var r=fx[i].getBoundingClientRect();
+    var pin=clamp((vh-r.top)/(vh*.28));
+    var pout=clamp(r.bottom/(vh*.22));
+    // The final card is at the end of the document; let it finish fading in.
+    var o=(i===fx.length-1)?pin:Math.min(pin,pout);
+    fx[i].style.opacity=o;
+    fx[i].style.transform="translateY("+((1-pin)*60)+"px)";
+  }
+}
+function req(){if(!tick){tick=true;requestAnimationFrame(update)}}
+addEventListener("scroll",req,{passive:true});addEventListener("resize",req);
+document.addEventListener("toggle",req,true);
+update();
+
+// Custom scrollbar: visible independently of the browser's native scrollbar.
+(function(){
+  var bar=document.getElementById("custom-scrollbar");
+  if(!bar)return;
+  var track=bar.querySelector(".scroll-track");
+  var thumb=bar.querySelector(".scroll-thumb");
+  var dragging=false,pointerOffset=0;
+  function metrics(){
+    var max=Math.max(0,document.documentElement.scrollHeight-innerHeight);
+    var trackH=track.clientHeight;
+    var thumbH=max===0?trackH:Math.max(22,trackH*innerHeight/document.documentElement.scrollHeight);
+    thumbH=Math.min(trackH,thumbH);
+    return {max:max,trackH:trackH,thumbH:thumbH,travel:Math.max(0,trackH-thumbH)};
+  }
+  function updateCustomScrollbar(){
+    var m=metrics();
+    var top=m.max?((window.scrollY/m.max)*m.travel):0;
+    thumb.style.height=m.thumbH+"px";
+    thumb.style.transform="translateY("+top+"px)";
+    bar.style.opacity=m.max>0?"0.92":"0.25";
+    thumb.style.pointerEvents=m.max>0?"auto":"none";
+  }
+  function scrollFromPointer(clientY){
+    var rect=track.getBoundingClientRect(),m=metrics();
+    if(!m.max||!m.travel)return;
+    var top=Math.max(0,Math.min(m.travel,clientY-rect.top-pointerOffset));
+    window.scrollTo(0,(top/m.travel)*m.max);
+  }
+  thumb.addEventListener("pointerdown",function(e){
+    var rect=thumb.getBoundingClientRect();
+    dragging=true;pointerOffset=e.clientY-rect.top;
+    thumb.setPointerCapture(e.pointerId);e.preventDefault();
+  });
+  thumb.addEventListener("pointermove",function(e){
+    if(dragging)scrollFromPointer(e.clientY);
+  });
+  function stopDrag(){dragging=false}
+  thumb.addEventListener("pointerup",stopDrag);
+  thumb.addEventListener("pointercancel",stopDrag);
+  track.addEventListener("pointerdown",function(e){
+    if(e.target===thumb)return;
+    var m=metrics(),rect=track.getBoundingClientRect();
+    pointerOffset=m.thumbH/2;
+    scrollFromPointer(e.clientY);
+  });
+  window.addEventListener("scroll",updateCustomScrollbar,{passive:true});
+  window.addEventListener("resize",updateCustomScrollbar);
+  if("ResizeObserver" in window){
+    new ResizeObserver(updateCustomScrollbar).observe(document.body);
+  }
+  updateCustomScrollbar();
+})();
+
+</script>
+</body>
+</html>
